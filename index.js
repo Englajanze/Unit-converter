@@ -17,23 +17,40 @@ let massP = document.getElementById("mass-p");
 
 convertBtn.addEventListener("click", function() {
     let inputValue = document.getElementById("input-value").value
-    console.log(inputValue)
-    lenght(inputValue)
-    volume(inputValue);
-    mass(inputValue)
+    if (!inputValue) {
+        return
+    } else {
+        lenght(inputValue)
+        volume(inputValue)
+        mass(inputValue)
+    }
 });
 
 function lenght(inputValue) {
-    let meters =   inputValue + " meters = " + (inputValue * 3.281).toFixed(3) +  " feet | " + inputValue +  " feet = " + (inputValue / 3.281).toFixed(3) + "meters";
-    lenghtP.innerHTML = meters;
+    lenghtP.innerHTML = `
+    ${inputValue} meters =  ${(inputValue * 3.281).toFixed(3)} feet | 
+    ${inputValue} feet =  ${(inputValue / 3.281).toFixed(3)} meters
+    `;
 }
 
 function volume(inputValue) {
-    let liters =   inputValue + " liters = " + (inputValue * 0.264).toFixed(3) +  " gallons | " + inputValue +  " gallons = " + (inputValue / 0.264).toFixed(3) + " liters";
-    volumeP.innerHTML = liters;
+    volumeP.innerHTML = `
+    ${inputValue} liters =  ${(inputValue * 0.264).toFixed(3)} gallons | 
+    ${inputValue} gallons =  ${(inputValue / 0.264).toFixed(3)} liters
+    `;
 }
 
 function mass(inputValue) {
-    let kilograms =   inputValue + " kilograms = " + (inputValue * 2.204).toFixed(3) +  " pounds | " + inputValue +  " pounds = " + (inputValue / 2.204).toFixed(3) + " kilograms";
-    massP.innerHTML = kilograms;
+    massP.innerHTML = `
+    ${inputValue} kilograms =  ${(inputValue * 2.204).toFixed(3)} pounds | 
+    ${inputValue} pounds =  ${(inputValue / 2.204).toFixed(3)} kilograms
+    `;
 }
+
+
+/* 
+göra snyggare och bättre funktioner. texten ska stå, kortare funktioner
+visa endast funktionerna om ett input tal är fyllt i, går ej att klicka på convert annars
+
+
+*/

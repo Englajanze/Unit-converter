@@ -1,18 +1,27 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     </head>
     <body>
-        <h1>Metric/Imperial Unit Conversion</h1>
-        <input type="number" name="" id="input-value">
-        <button id="convert-btn">Convert</button>
-
-        <h3>Lenght (Meter/Feet)</h3>
-       <p id="lenght-p"></p>
-        <h3>Volume (Liters/Gallons)</h3>
-        <p id="volume-p"></p>
-        <h3>Mass (Kilograms/Pounds)</h3>
-        <p id="mass-p"></p>
+        <div id="converter-div">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <h4>Convert to all units by entering a number</h4>
+            <input type="number" name="" id="input-value" min="0">
+            <button id="convert-btn">Convert</button>
+        </div>
+        <div id="unit-div">
+            <h3>Lenght (Meter/Feet)</h3>
+            <p id="lenght-p"></p>
+        </div>
+        <div id="unit-div">
+            <h3>Volume (Liters/Gallons)</h3>
+            <p id="volume-p"></p>
+        </div>
+        <div id="unit-div">
+            <h3>Mass (Kilograms/Pounds)</h3>
+            <p id="mass-p"></p>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>

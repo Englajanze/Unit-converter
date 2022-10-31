@@ -1,3 +1,76 @@
 body {
     margin: 0;
+    text-align: center;
+    background-color: rgb(244, 241, 236);
+    font-family: "trirong";
+}
+
+h1 {
+    color: white;
+    margin-bottom: 0;
+}
+
+#unit-div {
+    background-color: white;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    padding-top: 10px;
+    color: rgb(66, 183, 134);
+}
+
+#converter-div {
+    background-color: rgb(66, 183, 134);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+#input-value {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    background-color:rgb(66, 183, 134);
+    color: white;
+    border-radius: 2px;
+    border: 2px solid white;
+    margin: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+button {
+    border: none;
+    color: rgb(66, 183, 134);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 2px;
+    display: block;
+    margin: auto;
+    font-size: 20px;
+}
+
+button:hover {
+    box-shadow: 1px 4px 2px 2px rgba(69, 69, 69, 0.49);
+}
+
+h4 {
+    margin: 0;
+    font-weight: lighter;
+    font-size: small;
 }
